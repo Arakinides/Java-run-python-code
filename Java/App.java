@@ -20,17 +20,17 @@ class App {
                   BufferedReader leitorA = new BufferedReader(new InputStreamReader(comando.getInputStream()));
                   BufferedReader leitorB = new BufferedReader(new InputStreamReader(comando.getErrorStream()));
 
-                  // loop (enquanto tem informação mostra a linha)
+                  // Loop (enquanto tem informação mostra a linha)
                   String linha = null;
                   while ((linha = leitorA.readLine()) != null) {
                         System.out.println("linha - " + linha);
                   }
-                  // loop (se der null no meio do código)
+                  // Loop (se der null no meio do código)
                   while ((linha = leitorB.readLine()) != null) {
                         System.out.println("erro linha - " + linha);
                   }
 
-                  // caso dér erro fatal
+                  // Caso dér erro 
             } catch (Exception e) {
                   System.out.println(e);
             }
