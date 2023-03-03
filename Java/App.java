@@ -2,7 +2,7 @@ package Java;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-class test2 {
+class App {
       public static void main(String a[]) {
             try {
                         //Montador e inicializador do input 
@@ -10,7 +10,7 @@ class test2 {
                         //linguagem
                   "python", 
                         //0 diretório
-                  System.getProperty("user.dir") + "\\Python\\test1.py",
+                  System.getProperty("user.dir") + "\\Python\\Calculadora.py",
                         //1... variáveis
                   "28", "15");
                   Process comando = montador.start();
